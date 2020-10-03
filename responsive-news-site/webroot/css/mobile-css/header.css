@@ -1,0 +1,145 @@
+
+.navigation__container {
+  list-style: none;
+  font-size: 12px;
+  font-weight: 700;
+  opacity: 0.5;
+  line-height: 4;
+}
+
+.navigation {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  background-color: #eee;
+  min-width: 200px;
+  border-left: #aaa solid 1px;
+  box-shadow: 32px 0px 39px rgba(0,0,0,0.3);
+  transform: translate(-269px);
+  transition: transform .2s ease-in;
+  transition-duration: .5s;
+}
+
+body > header > label {
+  width: 1rem;
+  height: 1rem;
+  display: block;
+  background-size: 1rem;
+  background-image: url(../rect.svg);
+  background-repeat: no-repeat;
+}
+
+body [type= "checkbox"]:checked ~ .navigation {
+  transition: transform .2s ease-in;
+  transform: translate(0);
+  transition-duration: .5s;
+}
+
+#checkbox-menu {
+  display: none;
+}
+
+ body > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+}
+
+/* .navigation__list--item {
+  flex-grow: 1;
+
+ } */
+
+.navigation__link {
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: #343638;
+  text-transform: uppercase;
+  opacity: 0.5;
+ }
+ body > header h1 {
+  text-transform: uppercase;
+  margin: 0;
+ }
+ body > header p {
+   margin: 0;
+ }
+
+ .heading {
+  text-decoration: none;
+  color: #FA6980;
+  font-size: 1rem;
+ }
+
+ /* Tablet */
+ @media (min-width: 768px) {
+   body > header > label  {
+     display: none;
+   }
+    body > header > p > a .photo-profile {
+    width: 32px;
+    margin-inline-end: 1rem;
+    margin-block-end: -1rem;
+   }
+   body > header {
+     padding: 1.25rem;
+   }
+ }
+
+
+ /* tablet navigation */
+ @media (min-width: 768px) {
+   .navigation {
+    position: relative;
+    top: 0;
+    left: auto;
+    right: 0;
+    box-shadow: none;
+    min-width: none;
+    background: unset;
+    transform: none;
+    transition: transform none;
+    transition-duration: none;
+    margin-top: -36px;
+   }
+   body [type= "checkbox"]:checked ~ .navigation {
+     display: none;
+   }
+   .navigation__container {
+     display: flex;
+    list-style: none;
+    font-size: 12px;
+    font-weight: 700;
+    opacity: 0.5;
+    line-height: 4;
+    justify-content: flex-end;
+    margin-block-start: 0;
+    padding-inline-end: 3rem;
+    margin-block-end: 0;
+    margin-block-start: 0;
+   }
+   .navigation__link {
+     padding: 0;
+   }
+   body > header {
+     padding: 0;
+   }
+
+
+   header h1 {
+    padding-inline-start: 1rem;
+   }
+   .home {
+    opacity: unset;
+   }
+   /* Navigation list item here */
+   .navigation__list--item {
+    padding-inline-end: 2rem;
+   }
+ }
+

@@ -1,0 +1,15 @@
+html {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+body {
+  background-color: #f6f8f9;
+}
+main {
+  margin-inline-start: 1rem;
+}
+.section {
+  /* flex-grow: 1; */
+}
+

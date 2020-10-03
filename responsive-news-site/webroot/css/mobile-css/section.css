@@ -1,0 +1,79 @@
+h2 {
+  border-block-end: 2px solid;
+  position: relative;
+  margin-inline-start: 1rem;
+  margin-inline-end: 1rem;
+}
+
+h3 {
+  margin-inline-start: 1rem;
+  margin-inline-end: 1rem;
+  font-size: 26px;
+}
+.world-news {
+  color: #fff;
+  line-height: 1.7;
+  position: relative;
+}
+.world-news h2 {
+  z-index: 1;
+}
+.world-news a {
+  color: #fff;
+}
+.section__link--tosubhead {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  display: block;
+  margin-bottom: 2rem;
+}
+.section__description {
+  margin-inline-start: 1rem;
+  margin-inline-end: 1rem;
+}
+
+.more-news {
+  background-color: white;
+  color: darkgray;
+  line-height: 1.5;
+  position: relative;
+}
+.more-news h3 {
+  color: #fa6980;
+  text-transform: uppercase;
+  font-size: initial;
+}
+.more-news h4, p {
+  margin-inline-start: 1rem;
+  margin-inline-end: 1rem;
+  font-family: initial;
+}
+.more-news h4 {
+  color: black;
+  font-family: sans-serif;
+}
+
+i {
+  background-image: url("../clock.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-left: 1rem;
+}
+
+@media (min-width: 768px) {
+  article {
+    display: flex;
+    padding-inline-start: 3rem;
+    padding-inline-end: 3rem;
+  }
+  .more-news > header h2 {
+    margin-inline-start: 4rem;
+    margin-inline-end: 4rem;
+  }
+  .rain-forest {
+    margin-inline-end: 4rem;
+}
+
+}
+
